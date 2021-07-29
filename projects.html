@@ -3,8 +3,6 @@ layout: default
 ---
 <h3> projects </h3>
 
-<p>currently updating this page - check back soon!</p>
-
 <div id="projectButtons">
     <button class="btn active" onclick="filterSelection('all')">show all</button>
     <button class="btn" onclick="filterSelection('coursework')">coursework</button>
@@ -14,6 +12,87 @@ layout: default
 
 
 <div id="tileContainer">
+
+    <a class="tile coursework" href="#quic">
+        <h1>http/3 & quic analysis</h1>
+        <h2>paper</h2>
+        <div class="tileicon"><img src="../img/quic.png"></div>
+    </a>
+
+    <div id="quic" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>http/3 & quic analysis</h1>
+            <h2>comp 117: internet-scale distributed systems</h2>
+            <h5>paper</h5>
+            <div class="tileicon"><img src="../img/quic.png"></div>
+            <ul>
+                <li>researched structure and development of new HTTP/3 and QUIC protocols</li>
+                <li>analyzed differences from HTTP/2 and impact of tradeoffs in system design</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#rpc">
+        <h1>remote procedure call generator</h1>
+        <h2>c, python</h2>
+        <div class="tileicon"><img src="../img/rpc.png"></div>
+    </a>
+
+    <div id="rpc" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>rpc</h1>
+            <h2>comp 117: internet-scale distributed systems</h2>
+            <h5>c, python</h5>
+            <div class="tileicon"><img src="../img/rpc.png"></div>
+            <ul>
+                <li>designed and implemented program that automatically generates RPC proxies and stubs for given functions</li>
+                <li>added functionality for struct and multi-dimensional array parameters</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#fcpy">
+        <h1>file copy</h1>
+        <h2>c</h2>
+        <div class="tileicon"><img src="../img/directory.png"></div>
+    </a>
+
+    <div id="fcpy" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>file copy</h1>
+            <h2>comp 117: internet-scale distributed systems</h2>
+            <h5>c</h5>
+            <div class="tileicon"><img src="../img/directory.png"></div>
+            <ul>
+                <li>designed protocols for copying files and guaranteeing adherence to the end-to-end principle</li>
+                <li>implemented client and server that successfully transmits large files with high network disruption</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile personal" href="#cal">
+        <h1>habit analysis</h1>
+        <h2>python</h2>
+        <div class="tileicon"><img src="../img/cal.png"></div>
+    </a>
+
+    <div id="cal" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>habit analysis</h1>
+            <h2>personal project</h2>
+            <h5>python</h5>
+            <div class="tileicon"><img src="../img/cal.png"></div>
+            <ul>
+                <li>wrote program to analyze habits acquired during quarantine</li>
+                <li>converted ICS data from Google Calendar into statistics about frequency, average length, and types of habits</li>
+            </ul>
+        </div>
+    </div>
+
     <a class="tile internship" href="#otg">
         <h1>square on the go</h1>
         <h2>firebase, vue.js</h2>
@@ -50,6 +129,66 @@ layout: default
             <ul>
                 <li>authored backend design for new endpoint in Square Kitchen Display Service (KDS) after working with design and product to determine desired functionality</li>
                 <li>implemented design by building end to end endpoint to display aggregate counts of unfulfilled items on open KDS tickets</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#brazil">
+        <h1>brazil cyber scenario</h1>
+        <h2>paper</h2>
+        <div class="tileicon"><img src="../img/brazil.png"></div>
+    </a>
+
+    <div id="brazil" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>brazil cyber scenario</h1>
+            <h2>fletcher dhp 249: international cyber conflict</h2>
+            <h5>paper</h5>
+            <div class="tileicon"><img src="../img/brazil.png"></div>
+            <ul>
+                <li>researched digital landscape and cyber threats in Brazil</li>
+                <li>prepared immediate and long term response plan for given scenario of Petrobras hack</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#eubrief">
+        <h1>eu policy brief</h1>
+        <h2>paper</h2>
+        <div class="tileicon"><img src="../img/eu.png"></div>
+    </a>
+
+    <div id="eubrief" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>eu policy brief</h1>
+            <h2>fletcher dhp 249: international cyber conflict</h2>
+            <h5>paper</h5>
+            <div class="tileicon"><img src="../img/eu.png"></div>
+            <ul>
+                <li>explained DNS4EU initiative from EU’s Cyberstrategy for the Digital Decade to Chair of Senate Homeland Security and Governmental Affairs Committee</li>
+                <li>identified key points for technical background and discussed likelihood of success</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class="tile coursework" href="#alpine">
+        <h1>alpine</h1>
+        <h2>mvp pitch</h2>
+        <div class="tileicon"><img src="../img/mountain.png"></div>
+    </a>
+
+    <div id="alpine" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h1>alpine</h1>
+            <h2>comp 150: entrepreneurship for computer scientists</h2>
+            <h5>mvp pitch</h5>
+            <div class="tileicon"><img src="../img/mountain.png"></div>
+            <ul>
+                <li>developed business, marketing, and product plans for rental equipment management system</li>
+                <li>defined key product requirements and produced MVP pitch with go-to-market strategy</li>
             </ul>
         </div>
     </div>
@@ -234,7 +373,6 @@ layout: default
         </div>
     </div>
 
-
     <a class="tile personal" href="#familytree">
         <h1>family tree</h1>
         <h2>python</h2>
@@ -271,26 +409,6 @@ layout: default
             <ul>
                 <li>built map showing top 10 individual and corporate donors to each sitting U.S. senator using HTML, CSS, and the D3 Javascript library</li>
                 <li>cleaned data retrieved from Center for Responsive Politics’ public campaign finance disclosure API</li>
-            </ul>
-        </div>
-    </div>
-
-    <a class="tile coursework" href="#rpnii">
-        <h1>rpn calculator, pt. ii</h1>
-        <h2>um macro assembler</h2>
-        <div class="tileicon"><img src="../img/calculator.png"></div>
-    </a>
-
-    <div id="rpnii" class="overlay">
-        <div class="popup">
-            <a class="close" href="#">&times;</a>
-            <h1>rpn calculator, pt. ii</h1>
-            <h2>comp 40: machine structure and assembly language programming</h2>
-            <h5>um macro assembler</h5>
-            <div class="tileicon"><img src="../img/calculator.png"></div>
-            <ul>
-                <li>implemented reverse polish notation calculator on UM from previous project using jump table for control flow and a register for value stack</li>
-                <li>wrote macros for mathematic and bitwise operations, and recursive print function to print multi-digit numbers in pseudo assembly</li>
             </ul>
         </div>
     </div>
@@ -355,85 +473,7 @@ layout: default
         </div>
     </div>
 
-    <a class="tile coursework" href="#ppmtrans">
-        <h1>image rotator</h1>
-        <h2>c</h2>
-        <div class="tileicon"><img src="../img/grid.png"></div>
-    </a>
-
-    <div id="ppmtrans" class="overlay">
-         <div class="popup">
-            <a class="close" href="#">&times;</a>
-            <h1>image rotator</h1>
-            <h2>comp 40: machine structure and assembly language programming</h2>
-            <h5>c</h5>
-            <div class="tileicon"><img src="../img/grid.png"></div>
-            <ul>
-                <li>designed and executed implementation of blocked (n x n) 2D array using 1D array for given polymorphic interface to maximize locality</li>
-                <li>wrote program that transformed .ppm files with row, col, and block-major traversals</li>
-            </ul>
-        </div>
-    </div>
-
-    <a class="tile coursework" href="#simlines">
-        <h1>text similarity finder</h1>
-        <h2>c</h2>
-        <div class="tileicon"><img src="../img/search.png"></div>
-    </a>
-
-    <div id="simlines" class="overlay">
-         <div class="popup">
-            <a class="close" href="#">&times;</a>
-            <h1>text similarity finder</h1>
-            <h2>comp 40: machine structure and assembly language programming</h2>
-            <h5>c</h5>
-            <div class="tileicon"><img src="../img/search.png"></div>
-            <ul>
-                <li>wrote program that scanned through files and identified similar lines using hash tables</li>
-                <li>parsed through input following given definition of similarity and stored locations of similar lines in linked lists</li>
-            </ul>
-        </div>
-    </div>
-
-    <a class="tile coursework" href="#grep">
-        <h1>grep</h1>
-        <h2>c++</h2>
-        <div class="tileicon"><img src="../img/directory.png"></div>
-    </a>
-
-    <div id="grep" class="overlay">
-         <div class="popup">
-            <a class="close" href="#">&times;</a>
-            <h1>grep</h1>
-            <h2>comp 15: data structures</h2>
-            <h5>c++</h5>
-            <div class="tileicon"><img src="../img/directory.png"></div>
-            <ul>
-                <li>implemented program that indexed and queried file directory for all lines with given word with both case sensitive and insensitive capabilities</li>
-                <li>used hash tables to store appearances and implemented chaining for handling collisions</li>
-            </ul>
-        </div>
-    </div>
-
-    <a class="tile coursework" href="#rpni">
-        <h1>rpn calculator, pt. i</h1>
-        <h2>c++</h2>
-        <div class="tileicon"><img src="../img/abacus.png"></div>
-    </a>
-
-    <div id="rpni" class="overlay">
-         <div class="popup">
-            <a class="close" href="#">&times;</a>
-            <h1>rpn calculator, pt. i</h1>
-            <h2>comp 15: data structures</h2>
-            <h5>c++</h5>
-            <div class="tileicon"><img src="../img/abacus.png"></div>
-            <ul>
-                <li>implemented reverse polish notation calculator that could also parse booleans and code blocks using a stack</li>
-                <li>added functionality for supplementary features such as swap, execute, and read from file</li>
-            </ul>
-        </div>
-    </div>
+    
 
 </div>
 
